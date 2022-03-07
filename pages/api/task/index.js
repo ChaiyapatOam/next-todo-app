@@ -4,7 +4,7 @@ import dbConnect from "../../../utils/dbConnect";
 export default async (req, res) => {
   const { method } = req;
 
-  await dbConnect();
+  await dbConnect
 
   if (method === "POST") {
     try {

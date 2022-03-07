@@ -5,7 +5,7 @@ export default async (req, res) => {
   const { method } = req;
   const {id} = req.query;
 
-  await dbConnect();
+  await dbConnect
 
   //Update
   if (method === "PUT") {
